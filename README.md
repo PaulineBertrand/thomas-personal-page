@@ -1,3 +1,11 @@
+# Academic personal page
+
+This is Thomas Le Fils' personal website, where his research is accessible. It is a simple static page done with React and styled components.
+
+## Adding articles or talk reports
+
+Go to `src/articles.json` and add the new information to the list. You can omit some fields if appropriate.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
