@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+import './App.css'
+
+import OnePaper from './components/OnePaper'
+import PersonalInfo from './components/PersonalInfo'
+
+import papers from './articles.json'
+import articlesImages from './images/articlesImages'
 
 function App() {
+
+  const {articles, talks, thesis} = papers
+  const Section = styled.section`
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  `
+
+  const PaperWrapper = styled.div`
+    margin: 30px 0; 
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  `
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <PersonalInfo />
+    <PaperWrapper className="App">
+      <Section className="articles">
+          {
+              articles.map(article => <OnePaper key={article.title} {...article} pic={articlesImages[article.pic]} />)
+          }
+      </Section>
+      <Section className="talks">
+      {
+              talks.map(talk => <OnePaper key={talk.title} {...talk} />)
+          }
+      </Section>
+      <Section className="thesis">
+          <OnePaper {...thesis} />
+      </Section>
+    </PaperWrapper>
+    </>
   );
 }
 

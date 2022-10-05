@@ -1,0 +1,42 @@
+{
+    "articles": [
+        {
+            "title": "Holonomy of complex projective structures on surfaces with prescribed branch data",
+            "pic": "Holonomy",
+            "abstract": "We characterize the representations of the fundamental group of a closed surface to PSL2(C) that arise as the holonomy of a branched complex projective structure with fixed branch divisor. In particular, we compute the holonomies of the spherical metrics with prescribed integral conical angles and the holonomies of affine structures with fixed conical angles on closed surfaces.",
+            "arXivLink": "https://arxiv.org/abs/2103.11451",
+            "publishedLink": ""
+        },
+        {
+            "title": "Periods of abelian differentials with prescribed singularities",
+            "pic": "Periods",
+            "abstract": "We give a necessary and sufficient condition for a representation of the fundamental group of a closed surface of genus at least 2 to C to be the holonomy of a translation surface with a prescribed list of conical singularities. Equivalently, we determine the period maps of abelian differentials with prescribed list of multiplicities of zeros. Our main result was also obtained, independently, by Bainbridge, Johnson, Judge and Park.",
+            "arXivLink": "",
+            "publishedLink": ""
+        },
+        {
+            "title": "Pentagon representations and complex projective structures on closed surfaces",
+            "pic": "Pentagon",
+            "abstract": "We define a class of representations of the fundamental group of a closed surface of genus 2 to PSL2(C): the pentagon representations. We show that they are exactly the non-elementary PSL2(C)-representations of surface groups that do not admit a Schottky decomposition, i.e. a pants decomposition such that the restriction of the representation to each pair of pants is an isomorphism onto a Schottky group. In doing so, we exhibit a gap in the proof of Gallo, Kapovich and Marden that every non-elementary representation of a surface group to PSL2(C) is the holonomy of a projective structure, possibly with one branched point of order 2. We show that pentagon representations arise as such holonomies and repair their proof.",
+            "arXivLink": "",
+            "publishedLink": ""
+        }
+    ],
+    "talks": [
+        {
+            "title": "talk 1",
+            "abstract": "a talk about math stuff",
+            "link": ""
+        },
+        {
+            "title": "talk 2",
+            "abstract": "a talk about math stuff",
+            "link": ""
+        }
+    ],
+    "thesis": {
+        "title": "thesis title",
+        "abstract": "a thesis about math stuff",
+        "link": ""
+    }
+}
