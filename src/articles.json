@@ -25,8 +25,10 @@
     "talks": [
         {
             "title": "Holonomy of branched projective structures",
-            "abstract": "a talk about math stuff",
-            "link": ""
+            "abstract": "I presented this poster at blabli etc",
+            "docName": "Poster",
+            "pic": "Poster",
+            "link": "/pdf/poster.pdf"
         },
         {
             "title": "talk 2",

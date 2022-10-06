@@ -57,7 +57,7 @@ function App() {
       <Section>
         <h2>Thesis</h2>
       <SectionList className="thesis">
-          <OnePaper {...thesis} pic={articlesImages[thesis.pic]} />
+          <OnePaper {...thesis} pic={articlesImages[thesis.pic]} type="thesis" />
       </SectionList>
       </Section>
 

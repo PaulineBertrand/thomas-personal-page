@@ -2,7 +2,11 @@ import React from 'react'
 import {useState} from 'react'
 import styled, {css} from 'styled-components'
 
-function OnePaper({title, pic, abstract, arXivLink, publishedLink, type}) {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faFilePdf, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+
+
+function OnePaper({title, pic, abstract, arXivLink, publishedLink, link, docName, type}) {
 
     const [showAbstract, setShowAbstract] = useState(false)
     const toggle = () => {
@@ -54,14 +58,17 @@ function OnePaper({title, pic, abstract, arXivLink, publishedLink, type}) {
                 <h4>{title}</h4>
                 <Abstract>{abstract}</Abstract>
                 {
-                    type === "article" &&
-
+                    type === "article" ?
+                    
                     <LinkContainer>
                     <a href={arXivLink} target="_blank" className="link">arXiv</a>
                     {publishedLink && <a href={publishedLink} target="_blank" className="link">Published</a>}
 
                     </LinkContainer>
-                }
+
+                    :
+                    <a href={link} target="_blank" className="link">{docName}</a>
+                    }
             </div>
             </Article>
 
@@ -74,12 +81,32 @@ function OnePaper({title, pic, abstract, arXivLink, publishedLink, type}) {
                 {
                     type === "article" &&
                     
-                <LinkContainer>
-                    <a href={arXivLink} target="_blank" className="link">arXiv</a>
-                    {publishedLink && <a href={publishedLink} target="_blank" className="link">Published</a>}
+                    <LinkContainer>
+                        <a href={arXivLink} target="_blank" className="link">arXiv</a>
+                        {publishedLink && <a href={publishedLink} target="_blank" className="link">Published</a>}
 
-                </LinkContainer>
+                    </LinkContainer>
+
                 }
+
+            { 
+                type === "talk" &&
+                
+                <a href={link} target="_blank" className="link">{docName}</a>
+            
+            }
+
+
+            { 
+                type === "thesis" &&
+                
+                <a href={link} target="_blank" className="link">                     
+                    <FontAwesomeIcon icon={faFilePdf}/>
+                      Thesis
+                
+                </a>
+            
+            }
             </div>
             </Article>
         }
