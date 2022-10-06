@@ -1,10 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #FFFEF6;
+  font-family: "Merriweather";
+}
+
+.centered {
+  margin: auto;
+}
+
+.link {
+  color: #1D267B;
+  text-decoration: none;
 }
 
 .App-logo {

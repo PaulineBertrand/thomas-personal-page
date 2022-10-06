@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import thomasPic from './../images/thomasPicCropped1.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faFilePdf, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 
 function PersonalInfo() {
@@ -13,34 +13,52 @@ function PersonalInfo() {
 
     const MainPic = styled.img`
         position: absolute;
-        top: 30px;
+        top: 1rem;
         left: 10%;
         width: 14%;
         border-radius: 100%;
     `
 
+    const NameBanner = styled.div`
+        position: relative;
+        background-color: #FFFEF6;
+        height: 90px;
+    `
+
     const AccentBanner = styled.div`
-        background-color: #62A87C;
-        height: 100px;
+        background-color: grey;
+        height: 10px;
     `
 
     const PresentationBanner = styled.div`
+        position: relative;
+        z-index: -1;
         background-color: #1D263B;
-        height: 200px;
-        `
+        height: 150px;
+    `
         
-        const Name = styled.h1`
+    const Name = styled.h1`
         font-size: 3rem;
         position: absolute;
         left: 28%;
-        bottom: 210px;
-        `
+        bottom: 0.5rem;
+    `
         
-        const InfoWrapper = styled.div`
+    const ContactWrapper = styled.div`
+        color: white;
+        position: absolute;
+        right: 5rem;
+        top: 1rem;
+    `
+
+    const MainInfoWrapper = styled.div`
         color: white;
         position: absolute;
         left: 28%;
-        top: 110px;
+        top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     `
 
     const StyledLink = styled.a`
@@ -52,16 +70,29 @@ function PersonalInfo() {
   return (
     <Section>
 
+        <NameBanner>
+            <Name>Thomas Le Fils</Name> 
+        </NameBanner>
+
         <MainPic src={thomasPic}></MainPic>
 
         <AccentBanner></AccentBanner>
 
-        <Name>Thomas Le Fils</Name> 
 
-        <PresentationBanner></PresentationBanner>
-    
-        <InfoWrapper>
-            <h2>Postdoc at University of Sydney</h2>
+        <PresentationBanner>
+                
+            <MainInfoWrapper>
+                <h1>Postdoc at University of Sydney</h1>
+
+                <StyledLink href="#">
+                    <FontAwesomeIcon icon={faFilePdf}/>
+                    <span>   </span>
+
+                    <span>My CV</span>
+                </StyledLink>
+            </MainInfoWrapper>
+
+            <ContactWrapper>
             <div>
                 <FontAwesomeIcon icon={faEnvelope}/>
                 <span>   </span>
@@ -69,18 +100,20 @@ function PersonalInfo() {
                     thomas.le-fils@imj-prg.fr
                 </span>
             </div>
-            <StyledLink class="cv" href="#">
-                <FontAwesomeIcon icon={faFilePdf}/>
-                <span>   </span>
-
-                <span>My CV</span>
-            </StyledLink>
-            <p>L4B12C175</p>
+            <div>
+            <FontAwesomeIcon icon={faMapMarkerAlt}/>
+            <span>L41</span>
             <p>
                 Quadrangle A14
             </p>
             <p>University of Sydney</p>
-        </InfoWrapper>
+            </div>
+        </ContactWrapper>
+
+        </PresentationBanner>
+
+
+
 
     </Section>
   )

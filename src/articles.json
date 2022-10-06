@@ -11,20 +11,20 @@
             "title": "Periods of abelian differentials with prescribed singularities",
             "pic": "Periods",
             "abstract": "We give a necessary and sufficient condition for a representation of the fundamental group of a closed surface of genus at least 2 to C to be the holonomy of a translation surface with a prescribed list of conical singularities. Equivalently, we determine the period maps of abelian differentials with prescribed list of multiplicities of zeros. Our main result was also obtained, independently, by Bainbridge, Johnson, Judge and Park.",
-            "arXivLink": "",
-            "publishedLink": ""
+            "arXivLink": "https://arxiv.org/abs/2003.02216",
+            "publishedLink": "https://academic.oup.com/imrn/advance-article/doi/10.1093/imrn/rnaa263/5919187?guestAccessKey=58112390-f395-44e9-b22f-ee305f7fcc9c"
         },
         {
             "title": "Pentagon representations and complex projective structures on closed surfaces",
             "pic": "Pentagon",
             "abstract": "We define a class of representations of the fundamental group of a closed surface of genus 2 to PSL2(C): the pentagon representations. We show that they are exactly the non-elementary PSL2(C)-representations of surface groups that do not admit a Schottky decomposition, i.e. a pants decomposition such that the restriction of the representation to each pair of pants is an isomorphism onto a Schottky group. In doing so, we exhibit a gap in the proof of Gallo, Kapovich and Marden that every non-elementary representation of a surface group to PSL2(C) is the holonomy of a projective structure, possibly with one branched point of order 2. We show that pentagon representations arise as such holonomies and repair their proof.",
-            "arXivLink": "",
+            "arXivLink": "https://arxiv.org/abs/1911.04181",
             "publishedLink": ""
         }
     ],
     "talks": [
         {
-            "title": "talk 1",
+            "title": "Holonomy of branched projective structures",
             "abstract": "a talk about math stuff",
             "link": ""
         },
@@ -35,8 +35,9 @@
         }
     ],
     "thesis": {
-        "title": "thesis title",
-        "abstract": "a thesis about math stuff",
+        "title": "Sur les holonomies des structures projectives complexes sur les surfaces",
+        "abstract": "Cette thèse a pour objet l’étude des holonomies de certaines structures géométriques sur les surfaces. On s’intéresse en particulier aux structures projectives complexes branchées et aux surfaces de translation. Les espaces de déformations de ces structures géométriques sont naturellement stratifiés, par les sous-espaces où la combinatoire des points de branchement est fixée. Nous étudions les liens entre les holonomies de ces structures et ces stratifications. Les résultats principaux sont démontrés dans trois articles qui forment la plus grande partie de la thèse. Dans le premier, on définit une classe de représentations d’un groupe de surface de genre 2 dans PSL2(C) : les représentations pentagones. On montre que ce sont exactement les représentations non-élémentaires d’un groupe de surface dans PSL2(C) qui n’admettent pas de décomposition en pantalons telle que la restriction de la représentation à chaque pantalon soit un isomorphisme sur un groupe de Schottky à deux générateurs. Ce faisant, on exhibe une erreur dans la démonstration de Gallo, Kapovich et Marden du fait que toute représentation non-élémentaire d’un groupe de surface dans PSL2(C) est l’holonomie d’une structure projective complexe, éventuellement avec un point de branchement d’ordre 1. On montre que les représentations pentagones se réalisent comme de telles holonomies et on répare ainsi cette preuve. Dans le deuxième article, on s’intéresse aux périodes des surfaces de translation. Soit Σ une surface fermée. On caractérise les éléments de H1 (Σ, C) qui se réalisent comme les périodes absolues d’une différentielle abélienne, dont la combinatoire des zéros est fixée. De fa¸con équivalente on caractérise les morphismes H1(Σ, Z) → C qui sont obtenus comme l’holonomie d’une surface de translation dont la combinatoire des points coniques est prescrite. Cette caractérisation est une généralisation d’un théorème de Haupt et utilise les résultats de Kapovich, qui applique les théorèmes de Ratner à l’étude 3 de l’action du groupe modulaire sur les espaces de représentations correspondants. Dans le dernier article, on caractérise les représentations π1(Σ) → PSL2(C) qui se réalisent comme l’holonomie d’une structure projective branchée dont on fixe le nombre de points de branchement, ainsi que les ordres de ceux-ci. Ce résultat étend le précédent, et caractérise en particulier les holonomies des structures affines branchées à singularités prescrites et les holonomies des structures sphériques avec des points coniques d’angles multiples de 2π fixés.",
+        "pic": "Thesis",
         "link": ""
     }
 }
